@@ -4,11 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
+    <style>
+        /* CSS pour remplacer les attributs HTML obsolètes */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 2px solid black; /* Remplace l'attribut 'border' */
+        }
+        td.photo {
+            text-align: right; /* Remplace l'attribut 'align="right"' */
+        }
+    </style>
 </head>
 <body>
 
     <!-- Tableau principal pour infos personnelles + photo -->
-    <table border="2" width="100%">
+    <table>
         <tr>
             <td>
                 <strong>Prénom :</strong> Kylian<br>
@@ -17,7 +30,7 @@
                 <strong>Téléphone :</strong> 06 58 14 76 02<br>
                 <strong>Email :</strong> <a href="mailto:kylian.lemaitre27@gmail.com">kylian.lemaitre27@gmail.com</a>
             </td>
-            <td align="right">
+            <td class="photo">
                 <img src="photo.jpg" alt="Photo de Kylian Le Maitre" width="150">
             </td>
         </tr>
@@ -26,7 +39,7 @@
     <!-- Section Études -->
     <div>
         <h2>Études</h2>
-        <table border="2" width="100%">
+        <table>
             <tr>
                 <td>Licence AES</td>
             </tr>
@@ -39,7 +52,7 @@
     <!-- Section Compétences Informatiques -->
     <div>
         <h2>Compétences Informatiques</h2>
-        <table border="2" width="100%">
+        <table>
             <tr>
                 <td>Langages de programmation : HTML, CSS, <a href="https://learn.microsoft.com/fr-fr/dotnet/visual-basic/" target="_blank">VB</a></td>
             </tr>
@@ -52,7 +65,7 @@
     <!-- Section Expérience -->
     <div>
         <h2>Expérience</h2>
-        <table border="2" width="100%">
+        <table>
             <tr>
                 <td>2021 : Développeur Web chez IBM</td>
             </tr>
@@ -74,5 +87,3 @@
 
 </body>
 </html>
-
-
